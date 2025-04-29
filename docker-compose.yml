@@ -20,7 +20,7 @@ services:
 
   # Servicio Productor
   producer:
-    image: unandresmasxd/producer-service
+    image: davidsantiagocastro/producer-service
     container_name: producer-service
     ports:
       - "8080:8080" # Expone el puerto del API REST del productor
@@ -40,7 +40,7 @@ services:
 
   # Servicio Consumidor
   consumer:
-    image: unandresmasxd/consumer-service
+    image: davidsantiagocastro/consumer-service
     container_name: consumer-service
     depends_on:
       - rabbitmq
